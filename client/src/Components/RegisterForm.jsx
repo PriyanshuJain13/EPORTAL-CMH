@@ -61,7 +61,7 @@ const RegisterForm = () => {
             <option value="admin">Admin</option>
           </select>
           <div>
-          <a href='/register' className='text-blue-800 text-sm'>Already Registered?</a>
+          <a href='/login' className='text-blue-800 text-sm'>Already Registered?</a>
 
           </div>
         </div>

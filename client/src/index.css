@@ -7,3 +7,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.btn{
+    border-radius: 20px;
+    background: #460D0D;
+}
+
+.btn:hover{
+    background: #b65959;
+}
+input::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+  }
