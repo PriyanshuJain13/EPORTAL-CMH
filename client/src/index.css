@@ -18,5 +18,12 @@
 }
 input::placeholder {
     color: rgba(245, 245, 245, 0.619);
-    opacity: 1; /* Firefox */
-  }
+    
+}
+
+.logo{
+    height: 60px;
+    width: 60px;
+    background-size: cover;
+    background-image: url("./assets/logo.png");
+}
