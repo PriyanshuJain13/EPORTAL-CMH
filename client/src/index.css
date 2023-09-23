@@ -17,6 +17,6 @@
     background: #b65959;
 }
 input::placeholder {
-    color: white;
+    color: rgba(245, 245, 245, 0.619);
     opacity: 1; /* Firefox */
   }
