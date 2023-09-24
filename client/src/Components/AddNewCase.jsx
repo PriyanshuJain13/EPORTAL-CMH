@@ -1,7 +1,8 @@
-import React from "react";
+import React from 'react'
 import bgImage from "../assets/dashboardBg.png";
 import { Link } from "react-router-dom";
-const UserProfile = () => {
+
+const AddNewCase = () => {
   let bgStyle = {
     height: "93vh",
     width: "92vw",
@@ -10,10 +11,10 @@ const UserProfile = () => {
     backgroundImage: `url(${bgImage})`,
   };
   return (
-    <div className="">
+    <div className="" >
       <div className="header">
         <div className="tempNav h-16 bg-opacity-80 bg-[#460D0D] flex flex-row items-center justify-between p-3">
-          <Link to="/dashboard" className="">
+          <Link to="/" className="">
             <div className="logo"></div>
           </Link>
           <Link to="/dashboard/profile">
@@ -22,13 +23,13 @@ const UserProfile = () => {
         </div>
       </div>
 
-      <div className="flex flex-row w-full ">
+      <div className="flex flex-row w-full " >
         <div className="bg-[#460D0D] w-1/5">
-          <ul className="text-white text-3xl flex flex-col space-y-10 items-center pt-20 font-extralight">
-            <li className="w-full flex justify-center items-center bg-black p-2  bg-opacity-50">
+        <ul className="text-white text-3xl flex flex-col space-y-10 items-center pt-20 font-extralight">
+            <li className="w-full flex justify-center items-center  p-2">
               <Link to="/dashboard/profile">My Profile</Link>
             </li>
-            <li className="w-full flex justify-center items-center p-2">
+            <li className="w-full flex justify-center items-center p-2 bg-black  bg-opacity-50">
               <Link to="/dashboard/newCase">Add new case</Link>
             </li>
             <li className="w-full flex justify-center items-center p-2">
@@ -40,28 +41,11 @@ const UserProfile = () => {
           </ul>
         </div>
         <div className="h-full" style={bgStyle}>
-        <div className="App">
-            <table>
-                <tr>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>Gender</th>
-                </tr>
-                {/* {data.map((val, key) => {
-                    return (
-                        <tr key={key}>
-                            <td>{val.name}</td>
-                            <td>{val.age}</td>
-                            <td>{val.gender}</td>
-                        </tr>
-                    )
-                })} */}
-            </table>
-        </div>
+          Add new case features
         </div>
       </div>
     </div>
   );
-};
+}
 
-export default UserProfile;
+export default AddNewCase

@@ -25,13 +25,19 @@ function Dashboard() {
 
       <div className="flex flex-row w-full " >
         <div className="bg-[#460D0D] w-1/5">
-          <ul className="text-white text-3xl flex flex-col space-y-10 items-center pt-20 font-extralight">
-            <li><Link to="/dashboard/profile">My Profile</Link></li>
-            <li><Link to="/dashboard/newCase">Add new case</Link></li>
-            <li><Link to="/dashboard/progress">Progress</Link></li>
-            <li><Link to="/dashboard/nextHearing">Next hearing</Link></li>
-
-            
+        <ul className="text-white text-3xl flex flex-col space-y-10 items-center pt-20 font-extralight">
+            <li className="w-full flex justify-center items-center bg-black p-2  bg-opacity-50">
+              <Link to="/dashboard/profile">My Profile</Link>
+            </li>
+            <li className="w-full flex justify-center items-center p-2">
+              <Link to="/dashboard/newCase">Add new case</Link>
+            </li>
+            <li className="w-full flex justify-center items-center p-2">
+              <Link to="/dashboard/progress">Progress</Link>
+            </li>
+            <li className="w-full flex justify-center items-center p-2">
+              <Link to="/dashboard/nextHearing">Next hearing</Link>
+            </li>
           </ul>
         </div>
         <div className="h-full" style={bgStyle}>
