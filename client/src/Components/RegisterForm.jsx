@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import bgImage from "../assets/LandingBg.png";
+import { Link } from 'react-router-dom'
 const RegisterForm = () => {
   let bgStyle = {
     height: "100vh",
@@ -46,9 +47,9 @@ const RegisterForm = () => {
   return (
     <div style={bgStyle}>
       <div className="tempNav h-16 bg-opacity-80 bg-[#460D0D] flex flex-row items-center p-3">
-        <a href="/">
+        <Link to="/">
           <div className="logo"></div>
-        </a>
+        </Link>
       </div>
       <div className="absolute mt-32 left-1/3 border m-4 p-8 w-1/3 bg-black bg-opacity-30 rounded-lg">
         <h2 className="text-center mb-10 text-5xl font-bold text-white">
@@ -100,9 +101,9 @@ const RegisterForm = () => {
             <div></div>
           </div>
           <div>
-            <a href="/login" className="text-blue-800 text-md">
+            <Link to="/login" className="text-blue-800 text-md">
               Already Registered?
-            </a>
+            </Link>
           </div>
 
           <button

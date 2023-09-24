@@ -27,3 +27,9 @@ input::placeholder {
     background-size: cover;
     background-image: url("./assets/logo.png");
 }
+.userProfile{
+    height: 60px;
+    width: 60px;
+    background-size: cover;
+    background-image: url("./assets/user.png");
+}

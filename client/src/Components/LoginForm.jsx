@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import bgImage from "../assets/LandingBg.png";
+import { useNavigate } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 const LoginForm = () => {
+  const navigate = useNavigate()
+
   let bgStyle = {
     height: "100vh",
     width: "100vw",
@@ -10,7 +14,7 @@ const LoginForm = () => {
     backgroundRepeat: "no-repeat",
     backgroundImage: `url(${bgImage})`,
   };
-
+  
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -36,14 +40,16 @@ const LoginForm = () => {
     //   });
     e.preventDefault();
     console.log(e.username);
+
+    navigate('/dashboard')
   };
 
   return (
     <div style={bgStyle}>
       <div className="tempNav h-16 bg-opacity-80 bg-[#460D0D] flex flex-row items-center p-3">
-        <a href="/" className="">
+        <Link to="/" className="">
           <div className="logo"></div>
-        </a>
+        </Link>
       </div>
       <div className="absolute top-1/4 left-1/3 m-4 p-8 w-1/3 bg-black bg-opacity-30 rounded-lg">
         <h2 className="text-center mb-10 text-5xl font-bold text-white">
@@ -71,9 +77,9 @@ const LoginForm = () => {
             />
           </div>
           <div>
-            <a href="/register" className="text-blue-800 text-md">
+            <Link to="/register" className="text-blue-800 text-md">
               Not Registered?
-            </a>
+            </Link>
           </div>
           <button
             type="button"
