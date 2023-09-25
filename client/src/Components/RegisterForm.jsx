@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import bgImage from "../assets/LandingBg.png";
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
 const RegisterForm = () => {
   let bgStyle = {
     height: "100vh",
@@ -14,6 +15,7 @@ const RegisterForm = () => {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const [role, setRole] = useState(""); // Assuming you use a select element for role selection
+  const navigate = useNavigate();
 
   const handleUsernameChange = (e) => {
     setUsername(e.target.value);
@@ -31,17 +33,20 @@ const RegisterForm = () => {
     setRole(e.target.value);
   };
 
-  const handleRegister = () => {
-    // TODO: Send a POST request to your server with user registration data.
-    // You should use a library like axios for this.
-    // Example:
-    // axios.post('/api/register', { username, password, email, role })
-    //   .then((response) => {
-    //     // Handle successful registration
-    //   })
-    //   .catch((error) => {
-    //     // Handle registration error
-    //   });
+  const handleRegister = (e) => {
+    e.preventDefault();
+    axios
+      .post("http://localhost:3000/register", {
+        username,
+        password,
+        email,
+        role,
+      })
+      .then((result) => {
+        console.log(result);
+        navigate("/login");
+      })
+      .catch((err) => console.log(err));
   };
 
   return (

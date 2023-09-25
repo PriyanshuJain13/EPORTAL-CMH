@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import bgImage from "../assets/LandingBg.png";
 import { useNavigate } from "react-router-dom";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
+import axios from "axios";
 
 const LoginForm = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   let bgStyle = {
     height: "100vh",
@@ -14,7 +15,7 @@ const LoginForm = () => {
     backgroundRepeat: "no-repeat",
     backgroundImage: `url(${bgImage})`,
   };
-  
+
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -27,21 +28,17 @@ const LoginForm = () => {
   };
 
   const handleLogin = (e) => {
-    // TODO: Send a POST request to your server with the username and hashed password.
-    // You should use a library like axios for this.
-
-    // Example:
-    // axios.post('/api/login', { username, password })
-    //   .then((response) => {
-    //     // Handle successful login
-    //   })
-    //   .catch((error) => {
-    //     // Handle login error
-    //   });
     e.preventDefault();
+    axios
+      .post("http://localhost:3000/login", { username, password })
+      .then((result) => {
+        console.log(result);
+        if (result.data === "Success") {
+          navigate("/dashboard");
+        }
+      })
+      .catch((err) => console.log(err));
     console.log(e.username);
-
-    navigate('/dashboard')
   };
 
   return (
