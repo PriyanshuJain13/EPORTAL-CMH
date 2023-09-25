@@ -1,8 +1,9 @@
 ## E-Portal for Case Management Hearing
-#Overview
+
+# Overview
 This GitHub repository contains the source code for an E-Portal designed for Case Management Hearing. This web application serves as a platform to manage and streamline the case management process, making it easier for legal professionals and stakeholders to handle their cases efficiently.
 
-#Features
+# Features
 User Authentication: Secure user authentication and authorization system to ensure only authorized users can access and manage case-related information.
 
 Case Management: A comprehensive system to create, update, and track case details, including parties involved, case status, hearings, and important documents.
@@ -19,10 +20,10 @@ Search Functionality: Advanced search capabilities to quickly find and retrieve 
 
 User Roles: Assign different roles to users with varying levels of access and permissions, such as lawyers, judges, and clerks.
 
-#Dependencies
+# Dependencies
 To set up this project locally, you'll need to install the following dependencies:
 
-#Frontend Dependencies
+# Frontend Dependencies
 Vite: A fast, opinionated web application build tool. It is used here for front-end development.
 
 React: A JavaScript library for building user interfaces.
@@ -41,7 +42,7 @@ cd case-management-portal/client
 ```
 npm install
 ```
-#Backend Dependencies
+# Backend Dependencies
 Node.js: A JavaScript runtime for server-side development.
 
 Express.js: A fast, unopinionated, and minimalist web framework for Node.js.
@@ -59,32 +60,32 @@ cd case-management-portal/server
 ```
 npm install
 ```
-#Getting Started
+## Getting Started
 Follow these steps to set up and run the project locally:
-#1. Clone the repository:
+# 1. Clone the repository:
 ```
 git clone https://github.com/your-username/case-management-portal.git
 cd case-management-portal
 ```
 
-#2. Set up the frontend:
+# 2. Set up the frontend:
 ```
 cd client
 npm install
 npm run dev
 ```
 
-#3. Set up the backend:
+# 3. Set up the backend:
 ```
 cd backend
 npm install
 nodemon index
 ```
 
-#4. Access the application:
+# 4. Access the application:
 Open your web browser and visit http://localhost:5173 to access the E-Portal for Case Management Hearing.
 
-#Contributers
+# Contributers
 Ashish Chauhan
 Anshul Maurya
 Priyanshu Jain and others
