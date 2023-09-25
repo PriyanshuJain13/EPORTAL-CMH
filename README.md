@@ -51,6 +51,8 @@ Mongoose: An elegant MongoDB object modeling library for Node.js.
 
 Bluebird: A fully-featured promise library for Node.js.
 
+Nodemon: A live server for updated changes in server 
+
 # Navigate to the backend directory
 ```
 cd case-management-portal/server
@@ -91,5 +93,3 @@ Anshul Maurya,
 Priyanshu Jain and others
 
 
-
-Note: This README provides a basic overview of the project setup and dependencies. Make sure to update it with specific project details, installation instructions, and other relevant information as your project evolves.
