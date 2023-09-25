@@ -86,8 +86,8 @@ nodemon index
 Open your web browser and visit http://localhost:5173 to access the E-Portal for Case Management Hearing.
 
 # Contributers
-Ashish Chauhan
-Anshul Maurya
+Ashish Chauhan,
+Anshul Maurya,
 Priyanshu Jain and others
 
 
