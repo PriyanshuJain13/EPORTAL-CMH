@@ -43,9 +43,9 @@ const UserProfile = () => {
         <div className="App">
             <table>
                 <tr>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>Gender</th>
+                    <th>Name - Priyanshu</th>
+                    <th>Mail - pjstlyes13@gmail.com</th>
+                    <th>Gender - Mail</th>
                 </tr>
                 {/* {data.map((val, key) => {
                     return (
